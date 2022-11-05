@@ -165,12 +165,11 @@ def joint_publisher():
  [video](https://www.youtube.com/watch?v=yra_TSH7wVQ&ab_channel=DanielPineda)
 
 ### Espacio de trabajo 
-[![Implementation](http://img.youtube.com/vi/CYF96jcBgd0/0.jpg)](https://www.youtube.com/watch?v=CYF96jcBgd0&ab_channel=DanielPineda)
- [video](https://www.youtube.com/watch?v=CYF96jcBgd0&ab_channel=DanielPineda)
+
 
 ### Iniciales
-[![Implementation](http://img.youtube.com/vi/wPWUIFMu8iU/0.jpg)](https://www.youtube.com/watch?v=wPWUIFMu8iU&ab_channel=DanielPineda)
- [video](https://www.youtube.com/watch?v=wPWUIFMu8iU&ab_channel=DanielPineda)
+[![Implementation](http://img.youtube.com/vi/CYF96jcBgd0/0.jpg)](https://www.youtube.com/watch?v=CYF96jcBgd0&ab_channel=DanielPineda)
+ [video](https://www.youtube.com/watch?v=CYF96jcBgd0&ab_channel=DanielPineda)
 
 
 ## Analisis y problemas 
