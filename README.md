@@ -40,7 +40,7 @@ $$
     \\
     \alpha=\mathrm{arctan2}(-ztr,xtr)\\
     \\
-    \beta=\mathrm{arctan2}(-l_2*sin(\abs{q_3}),l_1+l_2*cos(\abs{q_3}))\\
+    \beta=\mathrm{arctan2}(-l_2*sin(|q_3|),l_1+l_2*cos(|q_3|))\\
     \\
     q_2 = \frac{\pi}{2}+\beta+\alpha-\gamma \\
 \end{gather*}
