@@ -1,6 +1,6 @@
 <h1 align="center"; style="text-align:center;">Laboratory 5: Invers kinematics - Phantom X - ROS</h1>
 <p align="center";style="font-size:50px; text-align:center; line-height : 50px;  margin-top : 0; margin-bottom : 0; "> <br> Universidad Nacional de Colombia</p>
-<p align="center";style="font-size:50px; text-align:center; line-height : 50px;  margin-top : 0; margin-bottom : 0; "> <br> Robotics</p>
+<p align="center";style="font-size:50px; text-align:center; line-height : 50px;  margin-top : 0; margin-bottom : 0; "> <br> Robótica</p>
 <p align="center";style="font-size:50px; text-align:center; line-height : 40px;  margin-top : 0; margin-bottom : 0; "> <br> Santiago Mariño (samrinoj) - Daniel Pineda (dpinedasi)</p>
 
 
@@ -10,15 +10,13 @@
 
 ### DHstd parameters
 
-With the help of a caliper, the length of the links, which are found in figure 1, is measured. With these lengths and the angles of the Home position, the DHst table is made.
+Con la ayuda de un calibrador se mide la longitud de los eslabones que se encuentran en la figura 1. Con estas longitudes y los ángulos de la posición Home, se hace la tabla DHst.
 
 ![Measurements](https://github.com/dpinedasi/Lab4Rob/blob/main/imagenes/LINKS.png)
 
-In the case of L1, two meassurements had to be done as the link has a L shape. Then the Pythagoras theorem was applied in order to find the minimum distance between the two join axes.
-
 ![DH parameters](https://github.com/dpinedasi/Lab4Rob/blob/main/imagenes/dhstd.png)
 
-### Invers kinematics
+### Cinemática inversa
 
 Dado que el robot presenta solo articulaciones cilindricas 5 articulaciones cilindricas, se decide resolver la cinematica inversa geometricamente:
 
@@ -175,4 +173,11 @@ def joint_publisher():
  [video](https://www.youtube.com/watch?v=CYF96jcBgd0&ab_channel=DanielPineda)
 
 
-## Analisis y problemas 
+## Analisís y problemas 
+
+
+Se tuvo problemas en la implementación de la mayoria de cosas ya que apesar de que la cinematica inversa daba buenos resultados como el robot se comportaba dependia de factores físicos del robot, como la rigidez de sus eslabones, el acondicionamiento de los motores y la precision de la cinematica inversa. Esto no nos permitia mantener una cadena larga de puntos para hacer trayectorias ya que no se mantenian los parametros del robot. 
+
+
+
+
