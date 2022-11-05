@@ -34,16 +34,13 @@ Para $q_2$ y $q_3$ :
 
 $$
 \begin{gather*}
-    
     ctheta3= \frac{xtr**2+ztr**2-l[1]**2-l[2]**2}{2*l[1]*l[2]}\\
     stheta3= \sqrt{1-ctheta3**2}\\
     q_3=\mathrm{arctan2}((stheta3),ctheta3)
 
     \alpha=\mathrm{arctan2}(-ztr,xtr)\\
     \beta=\mathrm{arctan2}(-l[2]*mt.sin(abs(theta3)),l[1]+l[2]*mt.cos(abs(theta3)))\\
-
     q_2 = \frac{\pi}{2}+\beta+\alpha-\gamma \\
-
 \end{gather*}
 $$
 
