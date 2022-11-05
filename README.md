@@ -160,5 +160,17 @@ def joint_publisher():
 ```
 ## Resultados 
 
+### Agarre del Marcador 
+[![Implementation](http://img.youtube.com/vi/yra_TSH7wVQ/0.jpg)](https://www.youtube.com/watch?v=yra_TSH7wVQ&ab_channel=DanielPineda)
+ [video](https://www.youtube.com/watch?v=wPWUIFMu8iU&ab_channel=DanielPineda)
 
-## Analisis 
+### Espacio de trabajo 
+[![Implementation](http://img.youtube.com/vi/wPWUIFMu8iU/0.jpg)](https://www.youtube.com/watch?v=wPWUIFMu8iU&ab_channel=DanielPineda)
+ [video](https://www.youtube.com/watch?v=wPWUIFMu8iU&ab_channel=DanielPineda)
+
+### Iniciales
+[![Implementation](http://img.youtube.com/vi/wPWUIFMu8iU/0.jpg)](https://www.youtube.com/watch?v=wPWUIFMu8iU&ab_channel=DanielPineda)
+ [video](https://www.youtube.com/watch?v=wPWUIFMu8iU&ab_channel=DanielPineda)
+
+
+## Analisis y problemas 
