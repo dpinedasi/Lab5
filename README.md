@@ -164,7 +164,10 @@ def joint_publisher():
 [![Implementation](http://img.youtube.com/vi/yra_TSH7wVQ/0.jpg)](https://www.youtube.com/watch?v=yra_TSH7wVQ&ab_channel=DanielPineda)
  [video](https://www.youtube.com/watch?v=yra_TSH7wVQ&ab_channel=DanielPineda)
 
-### Espacio de trabajo 
+### Espacio de trabajo
+
+[![Implementation](http://img.youtube.com/vi/RoLi9eCxMZE/0.jpg)](https://www.youtube.com/watch?v=RoLi9eCxMZE&ab_channel=DanielPineda)
+ [video](https://www.youtube.com/watch?v=RoLi9eCxMZE&ab_channel=DanielPineda)
 
 
 ### Iniciales
