@@ -56,7 +56,7 @@ $$
 \end{gather*}
 $$
 
-Codigo
+### Codigo
 
 ```
 pose=np.asanyarray(transl(x,y,43) @ trotx(-5,'deg'))
@@ -100,5 +100,65 @@ q=np.array([theta1,-theta2,-theta3,-theta4])
 q
 ```
 
+Por lo que ahora tenemos una función donde apartir de unas cordenadas X y Y nos devuelve los parametros q del robot.
+
+## Trayectorias 
+
+Con los parametros q deseados se hace un script con el que apartir de una letra le enviamos los parametros q al robot con ROS-dynamixel para que el robot haga la rutina deseada 
+
+```
+
+def joint_publisher():
+    pub = rospy.Publisher('/joint_trajectory', JointTrajectory, queue_size=0)
+    rospy.init_node('joint_publisher', anonymous=False)
+    aux=[0,0,0,0,0]
+    while not rospy.is_shutdown():
+        key=input()
+        #if KeyboardInterrupt:
+        #    key=getkey()
+        state = JointTrajectory()
+        state.header.stamp = rospy.Time.now()
+        state.joint_names = ["joint_1","joint_2","joint_3","joint_4","joint_5"]
+        point = JointTrajectoryPoint()
+        if key == 'q':
+            #[0,-0,-0,-0,0]
+            #aux =  [-0,  0.62943155,  1.82743112,  -0.4,-1*pi/48] #primer agarre
+            aux =  [-0.        ,  0.78538281,  1.35377102, -0.04475873,-1*pi/48]
+            key=' '
+        if key == 'w':
+            aux = [-0.        ,  0.78538281,  1.35377102, -0.04475873,-28*pi/48]
+            key=' '
+        elif key == 'e':
+            aux = [-0.        ,  0.44684831,  1.81658425, -0.13413087,-28*pi/48]
+            key=' '
+        elif key == 'r':
+            aux = [-0.        ,  0.07089825,  1.98868043,  0.1046296,-28*pi/48]
+            key=' '
+        elif key == 't':
+            aux = [-0.        , -0.32714256,  1.95815907,  0.56809835,-28*pi/48]
+            key=' '    
+        elif key == 'a':
+            aux = [ 1.40,  0.2989218 , -2.21066795, -1.14258003,-28*pi/48]
+            #aux = [ pi/2, 0.34627169,  -2.22509598,  -1.26276836,-28*pi/48]
+            key=' '
+        elif key == 's':
+            aux = [ -1.40,  0.2989218 , -2.21066795, -1.14258003,-28*pi/48]
+            #aux = [ pi/2, 0.34627169,  -2.22509598,  -1.26276836,-28*pi/48]
+            key=' '
+        elif key == 'd':
+            aux = [ -1.40, -1.04215294, -0.31883305,  -1.44825246,-28*pi/48]
+            key=' '         
+        elif key == 'f':
+            aux = [ 1.40, -1.05686548, -0.27167492,  -1.41580687,-28*pi/48]
+            key=' ' 
+        point.positions = aux   
+        point.time_from_start = rospy.Duration(0.5)
+        state.points.append(point)
+        pub.publish(state)
+        print('published command')
+        rospy.sleep(1)
+```
+## Resultados 
 
 
+## Analisis 
